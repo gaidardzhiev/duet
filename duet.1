@@ -1,0 +1,40 @@
+DUET(1)                      DOCUMENTATION                      DUET(1)
+
+NAME
+     duet - minimalist dual pane terminal file manager
+
+SYNOPSIS
+     duet
+
+DESCRIPTION
+     duet is a dual pane terminal file manager.
+
+     Left pane navigates filesystem. Right pane shows live preview:
+     directories (contents), text files (first screenful), binaries
+     (sanitized dump).
+
+QUICK REFERENCE
+     navigate          (hjkl, arrows)
+     parent dir        (h, <)
+     enter/open        (l, >, Enter)
+     top/bottom        (g, G)
+     hidden files      (.)
+     home              (~)
+     fuzzy find        (Tab, /)
+     shell             (!)
+     quit              (q, Ctrl-C)
+
+     Preview updates instantly. Directories blue, executables green.
+
+BUILD
+     gcc -o duet duet.c
+     make
+
+INSTALL
+     make install
+
+AUTHOR
+     Ivan Gaydardzhiev
+
+COPYRIGHT
+     Copyright (C) 2026 GPL-3.0-only
