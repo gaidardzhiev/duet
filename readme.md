@@ -1,6 +1,6 @@
 # duet
 
-Minimalist dual pane terminal file manager via extreme C preprocessor abuse and pathological macros [duet.c](./duet.c)
+Minimalist dual pane terminal file manager via [extreme C preprocessor abuse and pathological macros](./duet.c)
 
 ```
 ------------------------------------------------------
