@@ -1,6 +1,6 @@
 # duet
 
-A minimalist dual pane terminal file manager written in [C](./duet.c).
+Minimalist dual pane terminal file manager via extreme C preprocessor abuse and pathological macros [duet.c](./duet.c)
 
 ```
 ------------------------------------------------------
