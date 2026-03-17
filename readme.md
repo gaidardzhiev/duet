@@ -37,17 +37,18 @@ make install
 ```
 
 ## Usage
-
-`hjkl` or `arrow keys`   for navigation
-`h` or `<`               go to parent directory
-`l` or `>` or `Enter`    enter directory or open file in $EDITOR
-`g`                      jump to top
-`G`                      jump to bottom
-`.`                      toggle hidden files
-`~`                      go to $HOME
-`TAB` or `/`             fuzzy find with fzf
-`!`                      spawn a $SHELL
-`q` or `Ctrl+C`          quit
+| Key                   |  Action                                   |
+|-----------------------|-------------------------------------------|
+|`hjkl` or `arrow keys` |  for navigation                           |
+|`h` or `<`             |  go to parent directory                   |
+|`l` or `>` or `Enter`  |  enter directory or open file in $EDITOR  |
+|`g`                    |  jump to top                              |
+|`G`                    |  jump to bottom                           |
+|`.`                    |  toggle hidden files                      |
+|`~`                    |  go to $HOME                              |
+|`TAB` or `/`           |  fuzzy find with fzf                      |
+|`!`                    |  spawn a $SHELL                           |
+|`q` or `Ctrl+C`        |  to quit                                  |
 
 ## File preview
 
@@ -57,7 +58,7 @@ The right pane previews whatever is under the cursor.
 
 **Text files** show the first screenful of content with tabs expanded and long lines clipped to the pane width.
 
-**ELF binaries and executables** show a sanitized dump of the first 4096 bytes. Non printable bytes are replaced with `.` so the file stays readable, section headers, linker paths, and symbol names bleed through naturally:
+**ELF binaries and executables** show a sanitized dump of the first 4096 bytes. Non printable bytes are replaced with `.` so the file stays readable, section headers, linker paths, and symbol names bleed through naturally.
 
 ## Color coding
 
