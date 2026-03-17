@@ -1,40 +1,61 @@
-DUET(1)                      DOCUMENTATION                      DUET(1)
+.TH DUET 1 "DOCUMENTATION"
+.hy
+.SH NAME
+duet \- minimalist dual pane terminal file manager
 
-NAME
-     duet - minimalist dual pane terminal file manager
+.SH SYNOPSIS
+.B duet
 
-SYNOPSIS
-     duet
+.SH DESCRIPTION
+duet is a dual pane terminal file manager.
+.PP
+Left pane navigates filesystem. Right pane shows live preview: directories (contents),
+text files (first screenful), binaries (sanitized dump).
 
-DESCRIPTION
-     duet is a dual pane terminal file manager.
+.SH QUICK REFERENCE
+.RS 4
+.TP 12
+navigate
+.BR hjkl " or arrows"
+.TP 12
+parent dir
+.BR h ", <"
+.TP 12
+enter/open  
+.BR l ", >, Enter"
+.TP 12
+top/bottom  
+.BR g ", G"
+.TP 12
+hidden     
+.B "."
+.TP 12
+home       
+.B "~"
+.TP 12
+fuzzy find 
+.BR Tab
+.TP 12
+shell      
+.B "!"
+.TP 12
+quit       
+.BR q ", Ctrl-C"
+.RE
 
-     Left pane navigates filesystem. Right pane shows live preview:
-     directories (contents), text files (first screenful), binaries
-     (sanitized dump).
+.SH BUILD
+.B gcc -o duet duet.c
+.PP
+or
+.B make
 
-QUICK REFERENCE
-     navigate          (hjkl, arrows)
-     parent dir        (h, <)
-     enter/open        (l, >, Enter)
-     top/bottom        (g, G)
-     hidden files      (.)
-     home              (~)
-     fuzzy find        (Tab, /)
-     shell             (!)
-     quit              (q, Ctrl-C)
+.SH INSTALL
+.B make install
 
-     Preview updates instantly. Directories blue, executables green.
+.SH AUTHOR
+Ivan Gaydardzhiev
 
-BUILD
-     gcc -o duet duet.c
-     make
-
-INSTALL
-     make install
-
-AUTHOR
-     Ivan Gaydardzhiev
-
-COPYRIGHT
-     Copyright (C) 2026 GPL-3.0-only
+.SH COPYRIGHT
+Copyright \(co 2026 Ivan Gaydardzhiev
+.br
+GPL-3.0-only
