@@ -101,7 +101,6 @@ _KD({0xC2,_up},{0xC6,_enter},{0xA9,_enter},{0xA3,_fzf},{0xD5,_fzf},{0xEB,_shell}
 #define _FZFCMD static const unsigned char _fc[]={0x7E^102,0x7E^105,0x7E^110,0x7E^100,0x7E^32,0x7E^46,0x7E^32,0x7E^45,0x7E^109,0x7E^97,0x7E^120,0x7E^100,0x7E^101,0x7E^112,0x7E^116,0x7E^104,0x7E^32,0x7E^54,0x7E^32,0x7E^50,0x7E^62,0x7E^47,0x7E^100,0x7E^101,0x7E^118,0x7E^47,0x7E^110,0x7E^117,0x7E^108,0x7E^108,0x7E^32,0x7E^124,0x7E^32,0x7E^102,0x7E^122,0x7E^102,0x7E^32,0x7E^45,0x7E^45,0x7E^104,0x7E^101,0x7E^105,0x7E^103,0x7E^104,0x7E^116,0x7E^32,0x7E^52,0x7E^48,0x7E^37,0};
 #define _ARR(_) _(65,if(SEL>0)SEL--) _(66,if(SEL<CNT-1)SEL++) _(67,_enter()) _(68,_up())
 #define _ACASE(_byte,_act) case _byte:_act;return;
-//#define _SK(_) _(113,exit(0)) _(3,exit(0)) _(107,if(SEL>0)SEL--) _(106,if(SEL<CNT-1)SEL++) _(103,SEL=0;TOP=0) _(71,SEL=CNT>0?CNT-1:0) _(46,SHH=!SHH;DRT=1)
 #define _SK(_) _(113,exit(0)) _(3,exit(0)) _(107,if(SEL>0)SEL--) _(106,if(SEL<CNT-1)SEL++) _(103,SEL=0;TOP=0) _(71,SEL=CNT>0?CNT-1:0) _(46,SHH=!SHH;DRT=1) _(33,_shell())
 #define _SKIF(_byte,_act) if(_buf[0]==_byte){_act;return;}
 #define _X0a static void _raw(void){struct termios _q;if(tcgetattr(0,&_o)==-1)_die("tcgetattr");_q=_o;_TF(_AF)_q.c_cc[VMIN]=1;_q.c_cc[VTIME]=0;if(tcsetattr(0,TCSAFLUSH,&_q)==-1)_die("tcsetattr");}
